@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    android:orientation="vertical">
+
+    // 상단바 3개 아이콘 들어가는 레이아웃
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 상단바 버튼 값의  설정 -->
+        //메뉴버튼 아이디지정
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/menu"
+            android:visibility="invisible">
+           </Button>
+
+        <Button
+            android:id="@+id/btn_lunalogo"
+            android:layout_width="120dip"
+            android:layout_height="70dip"
+            android:layout_marginLeft="80dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/lunalogo">//로고버튼 아이디지정</Button>
+
+
+    </LinearLayout>
+
+    //ID
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="330dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/text_box" />
+
+        <EditText
+            android:id="@+id/Id_info"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginBottom="30dip"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:hint=" ID"
+            android:inputType="text"
+            android:privateImeOptions="defaultlnputmode=english"
+            android:textColor="#f0f0f0"
+            android:textColorHint="#f0f0f0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:imeOptions="actionDone">
+        </EditText>
+
+
+        //PW
+
+        <ImageView
+            android:layout_width="330dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/text_box" />
+
+        //login버튼
+
+        <EditText
+            android:id="@+id/Password_info"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginBottom="30dip"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:hint=" Password"
+            android:inputType="textPassword"
+            android:privateImeOptions="defaultlnputmode=english"
+            android:textColor="#f0f0f0"
+            android:textColorHint="#f0f0f0"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="330dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="330dp"
+            android:background="@drawable/text_box"
+            android:text="로그인"
+            android:textColor="#f0f0f0"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    //계정찾기_회원가입
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:id="@+id/check_auto_login"
+                android:buttonTint="#f0f0f0"/>
+
+
+            <TextView
+                android:layout_marginTop="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#00ff0000"
+                android:text="자동으로 로그인하기"
+                android:textStyle="bold"
+                android:textColor="#f0f0f0"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_account_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:background="#00ff0000"
+            android:text="계정 찾기"
+            android:textStyle="bold"
+            android:textColor="#f0f0f0"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:background="#00ff0000"
+            android:fontFamily="@font/thechocobbangr"
+            android:text="|"
+            android:textStyle="bold"
+            android:textColor="#f0f0f0"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn_Sign_Up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="#00ff0000"
+            android:text="회원가입"
+            android:textStyle="bold"
+            android:textColor="#f0f0f0"
+            android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/text_guest_login"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GUEST 로 이용하기"
+            android:textColor="#f0f0f0"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#100c3e">
+
+        <!-- 상단바 버튼 값의 설정 -->
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/btn_back"
+            android:id="@+id/btn_back">
+        </Button>
+
+        <Button
+            android:layout_width="120dip"
+            android:layout_height="70dip"
+            android:layout_marginLeft="80dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/lunalogo"
+            android:id="@+id/btn_lunalogo"> //로고버튼 아이디지정
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#100c3e">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="- 이용약관 -"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="호텔루나에 오신 것을 환영합니다."
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="모바일 사이트 또는 앱 등 디지털 채널을 사용하여 호텔루나를 예약할 때  본 예약 이용 약관과 당사 개인 정보 보호 정책, 웹 사이트 이용 약관 및 그 외 당사에서 귀하의 예약을 확인하기 전에 귀하가 관심을 가져야 할 모든 서면 정보가 적용됩니다. \n\n
+본 예약 약관은 여러 가지 중요한 사항을 설명하고 있으며 당사의 각 권리 및 의무를 설정하고 있으므로 본 예약 약관을 자세히 읽어 주십시오.
+본 예약 약관에서 귀하에 대한 언급에는 예약할 때 첫 번째로 이름이 입력된 사람과 예약 명단에 기록된 모든 사람이 포함됩니다. 본 사이트는 호텔루나에서 소유 및 운영하고 있으며 귀하가 예약하면 귀하의 예약은 당사에서 관리합니다. \n\n
+예약하면 예약 명단에 첫 번째로 이름이 입력된 사람은 예약 명단에 기록된 모든 사람을 대신해 다음 사항에 동의하는 것입니다.
+" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="1. 예약하기"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="당사에서 객실을 예약하려면 본 사이트에 있는 지침을 따르십시오. 신용카드 또는 직불카드 세부 정보를 제공해야 예약을 완료할 수 있습니다. \n\n
+예약 요청을 제출하기 전에 세부 사항을 확인하여 예약이 올바른지 확인해 주십시오. 귀하가 잘못된 정보를 제공함으로써 발생하는 모든 예약 지연 또는 예약 불이행에 대해 당사는 아무런 책임이 없습니다. \n\n
+귀하의 예약이 확정되면 예약 세부 정보를 확인하고 귀하에게 전송되는 유효한 계약 번호가 명시된 확인서를 귀하에게 발급하는 즉시 귀하와 당사 간에 구속력 있는 계약이 체결되는 것입니다. 받자마자 예약 확인에 대한 세부 사항이 잘못되었다고 생각되거나 변경이 필요한 경우 나중에 변경하지 못할 수도 있으므로 즉시 연락을 취해야 합니다.\n\n
+당사는 당사의 재량에 따라 예약을 거부하고 확인증 발급을 거절할 수 있는 권리를 보유합니다." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="2. 예약에 대한 지불"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="지불은 호텔루나에서 현금 또는 신용카드/직불카드로 이루어질 수 있습니다.\n\n
+예약 유형에 따라 예약금 전액 지불이 예약 당시에 요청될 수도 있습니다. 이러한 경우 예약 시점과 체크인 날짜 사이에 언제든지 귀하의 신용카드/직불카드로 예약금 전액이 청구될 수 있습니다.\n\n
+예약 시점에 예약금 전액을 지불하지 않으면 호텔에 도착하는 즉시 전액을 지불해야 합니다.\n\n
+예약금 전액이 정시에 지불되지 않으면 당사는 귀하가 예약을 취소하기를 원한다고 추정할 수 있습니다. 이 경우 당사는 해당 날짜에 지불되었거나 지불되어야 할 모든 금액을 보유할 자격이 있으며 귀하는 예약 시점에 귀하에게 통지된 취소 수수료를 지불해야 합니다.\n\n
+체크아웃하기 전에 부대 시설(예: 미니바, 추가 식사 등)에 대한 지불은 호텔에 직접 해야 합니다." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="3. 가격"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="예약 가격 및 적용되는 지불, 변경, 취소 약관은 객실, 예약 유형 및 그 외 요인에 따라 달라질 수 있으며 예약 시점에 본 약관이 통보됩니다. 모든 요금은 호텔 예약 상황에 따라 적용됩니다.\n\n
+당사 가격은 '변동 가격' 모델에 기반을 두고 있고 예약 패턴에 따라 각 호텔에 의해 설정되므로 공급 및 수요에 따라 변동됩니다. 귀하의 예약 가격은 예약 시 확정되며 호텔에 도착하기 전에 예약한 기간에 대해 요금 변동이 발생한 경우에도 수정되지 않습니다. 예약 시점에 항상 가격을 확인해야 합니다.\n\n
+본 사이트에 별도로 명시하지 않는 한, 추가 서비스(조식, 하프 보드, 풀 보드 등)는 가격에 포함되지 않습니다. 요금 페이지에 명시된 관광 세금은 호텔에 직접 지불해야 하며 이 금액에 포함될 수 있는 온라인 선불 결제는 예외입니다.\n\n
+또한, 가격은 지불을 위해 선택한 통화 및 환율 차이에 따라 달라질 수도 있습니다. 외환으로의 전환은 표시로 제공되며 계약으로 보증되지 않습니다. 예약 시 확인된 통화만 보증됩니다. 이 통화가 호텔에서 사용된 통화와 다른 경우 발생 가능한 환전 수수료는 고객의 책임입니다. 호텔 출발 시 또는 호텔 도착 시 지불되어야 하는 요금이고 고객의 통화가 호텔의 통화와 동일하지 않은 경우 예약일의 환율과 호텔 투숙 날짜의 환율이 다를 수 있으므로 호텔에서 인출한 요금과 예약 시점에 표시된 요금이 다를 수 있습니다.\n\n
+당사는 광고된 가격과 확정된 가격에 오류가 발생한 경우 해당 오류를 수정할 수 있는 권리를 보유합니다. 당사는 해당 오류를 인식하는 즉시 수정합니다.\n\n
+확정된 예약의 가격은 부가가치세 또는 그 외 정부에서 부과한 변경 사항 및 통화 환율 변동과 같은 정부 조치로 인해 발생하는 오류 수정 및 변경 사항을 항상 준수해야 하며 당사는 귀하의 확정 예약의 가격 인상을 귀하에게 알릴 수 있는 권리를 보유합니다.\n\n
+인터넷에서 제공되는 특정 판촉 행사는 인터넷에서만 독점적으로 판매됩니다. 즉, 호텔 프론트 데스크에서는 어떠한 경우에도 원격으로 판매되지 않습니다." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="회원 관리 조항"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="제1조(목적)"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="본 약관은 호텔루나가 운영하는 모바일 애플리케이션에서 제공하는 서비스를 이용함에 있어 호텔루나와 이용
+자의 권리, 의무 및 책임 사항을 규정함을 목적으로 합니다." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="제2조(정의)"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="1. 이용자란 호텔루나에 접속하여 본약관에 제공하는 서비스를 받는 회원을 말합니다.\n\n
+2. 회원 이라 함은 호텔루나에 개인정보를 제공하여 회원등록을 한 자로서, 호텔루나의 정보를 지속적으로
+제공받으며, 호텔루나가 제공하는 서비스를 계속적으로 이용 할 수 있는 자를 말합니다." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="제3조(서비스 중지)"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="1. 컴퓨터 등 정보통신설비의 보수점검 교체 및 고장\n\n
+2. 국가비상사태, 서비스 설비의 장애 또는 서비스 이용의 폭주 등으로 서비스 이용에 지장이 있는 경우\n\n
+3. 기타 중대한 사유로 인하여 회사가 서비스 제공을 지속하는 것이 부적당하다고 인정하는 경우" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="제4조(회원가입)"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="1. 이용자는 호텔루나가 정한 가입 양식에 따라 회원정보를 기입한 후 본 약관에 동의한다는 의사표시를
+함으로서 회원가입을 신청합니다.\n\n
+2. 호텔루나는 제 1항과 같은 회원가입 신청에 대하여 승낙함으로써 회원가입계약이 성립하며, 다음 각
+호 중 어느 하나에 해당하는 이용자의 회원가입 신청에 대해서는 이를 거부할 수 있습니다." />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="제5조 (회원탈퇴 및 자격상실)"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="①회원은 언제든지 서면, e-mail, 전화, 기타 당사가 정하는 방법으로 회원탈퇴를 요청할 수 있으며, 당사와 제휴사는 다음 제1)호의 경우 또는 본 조 제②항 경우를 제외하고는 회원의 요청에 따라 조속히 회원탈퇴에 필요한 제반 절차를 수행합니다. 단, 회원탈퇴 시 이벤트 부정 이용 방지 등을 위하여 탈퇴일로부터 30일 이내에 재가입이 불가하나, 동 기간 중 제휴카드를 발급하는 경우에는 회원탈퇴가 자동 취소되며 정상적으로 호텔루나 서비스 이용이 가능합니다.\n\n
+1) 당사나 제휴사를 통해 구매하거나 예약한 물품/서비스가 배송 중이거나 실현되지 아니한 때\n\n
+②포인트 사용 후 사용 된 포인트의 적립 원천이 되는 구매 행위의 취소로 인해 마이너스(-) 포인트가 발생한 회원은 별도 당사 난 제휴사의 승인이나 해당 포인트에 해당하는 금액을 변제하기 전까지는 탈퇴가 불가합니다.\n\n
+③회원이 다음 각 호에 해당하는 경우, 당사는 당해 회원에 대한 통보로써 회원 자격을 상실시킬 수 있습니다. 단, 3)호의 경우에는 회원에 대한 통보 없이 자격이 상실됩니다.\n\n
+1) 회원 가입 신청 시, 허위 내용을 등록하거나 타인의 명의를 도용한 경우\n\n
+2) 회원이 사망한 경우\n\n
+3) 다른 회원의 당사나 제휴사 및 제휴영업점의 서비스홈페이지 이용을 부당하게 방해하거나 그 정보를 도용하는 등 관련 법령을 위반하여 전자거래질서를 위협하는 경우\n\n
+4) 당사나 제휴사 서비스홈페이지를 이용하여 법령 및 이 약관에서 금지하거나 공서양속에 반하는 행위를 하는 경우\n\n
+5) 기타 본 약관이 규정하는 회원의 의무를 위반하는 경우\n\n
+6) 기타 호텔루나 서비스 운영을 고의로 방해하는 행위를 하는 경우\n\n
+9) 당사 및 제휴사의 합리적인 판단에 기하여 호텔루나 서비스의 제공을 거부할 필요가 있다고 인정할 경우.\n\n
+④본 조 제 ③ 항에 의해 회원 자격이 상실된 회원은 당사로부터 해당 사유발생에 대한 통지를 받은 날로부터 최대 30일 이내에 본인의 의견을 소명할 수 있으며, 당사는 회원의 소명 내용을 심사하여 회원의 주장이 타당하다고 판단하는 경우 회원으로 하여금 계속하여 정상적인 호텔루나 서비스를 이용할 수 있도록 합니다.\n\n
+⑤본 조 제①항에 의한 회원탈퇴 또는 제③항에 의한 회원자격상실이 확정되는 시점은 아래와 같습니다.\n\n
+1) 회원의 탈퇴요청의 경우에는 당사가 회원탈퇴 처리의 완료 통보하는 시점에서 탈퇴가 완료 됩니다. 다만, 당사는 완료 통보일로부터 30일의 유예 기간 동안 기 적립된 포인트 정보를 소멸시키지 아니하고 저장하였다가, 회원이 별도의 절차를 거쳐 재가입 요청을 하고 회사가 이를 허락하여 유예 기간 내 재가입할 경우, 모든 포인트를 재사용토록 하며, 재가입이 없이 유예기간이 지나면, 모든 포인트가 즉시 소멸됩니다.\n\n
+2) 회원자격상실의 경우 통보일에 회원 자격상실이 확정됩니다. 단 사망으로 인한 자격상실의 경우에는 당사의 통보여부와 상관없이 회원 사망일에 자격상실이 확정되며, 당해 회원에게 제공된 기 호텔루나 서비스와 관련된 권리나 의무 및 포인트는 당해 회원의 상속인에게 상속되지 않습니다.\n\n
+⑥본 조 제①항에 의한 회원탈퇴 또는 제③항에 의한 회원자격상실이 된 경우 회원 정보는 다음과 같이 처리 됩니다.\n\n
+1) 탈퇴한 회원의 정보는 본 약관 제15조에 규정하는 바에 따라 일정 기간 보유 후 삭제처리 됩니다.\n\n
+2) 회원 자격이 상실 된 회원의 정보는 회원 자격상실 확정 후 호텔루나 서비스 부정 이용 방지 및 타 회원의 추가적인 피해 방지를 위해 2년간 보유 하며 이 기간 동안 재가입 및 호텔루나 서비스가 불가 할 수도 있습니다.
+" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#100c3e">
+
+        <!-- 상단바 버튼 값의 설정 -->
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/btn_back"
+            android:id="@+id/btn_back">
+        </Button>
+
+        <Button
+            android:layout_width="120dip"
+            android:layout_height="70dip"
+            android:layout_marginLeft="80dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/lunalogo"
+            android:id="@+id/btn_lunalogo"> //로고버튼 아이디지정
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#100c3e">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="- 계정 찾기 -"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#D3D3D3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dip"
+            android:textColor="#100c3e"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="- 아이디 찾기 -"/>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="이름"
+            android:textStyle="bold"
+            android:id="@+id/edit_id_name"/>
+
+
+        <EditText
+            android:layout_marginLeft="50dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="E-Mail"
+            android:textStyle="bold"
+            android:id="@+id/edit_id_email"/>
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_noneborder"
+            android:textSize="20sp"
+            android:textColor="#100c3e"
+            android:textStyle="bold"
+            android:text="찾기"
+            android:id="@+id/btn_id_search"/>
+
+        <View
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:background="#D3D3D3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dip"
+            android:textColor="#100c3e"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="- 비밀번호 찾기 -"/>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            android:textStyle="bold"
+            android:id="@+id/edit_password_id"
+            />
+
+        <EditText
+            android:layout_marginLeft="50dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="이름"
+            android:textStyle="bold"
+            android:id="@+id/edit_password_name"
+            />
+
+        <EditText
+            android:layout_marginLeft="50dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="E_Mail"
+            android:textStyle="bold"
+            android:id="@+id/edit_password_email"
+            />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="찾기"
+            android:background="@drawable/btn_noneborder"
+            android:textSize="20sp"
+            android:textColor="#100c3e"
+            android:textStyle="bold"
+            android:id="@+id/btn_password_search"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_button"
+            android:layout_gravity="bottom"
+            android:text="로그인"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_bottom_login" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

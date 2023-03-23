@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#100c3e"
+        android:orientation="horizontal">
+
+        <!-- 상단바 버튼 값의 설정 -->
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/btn_back" />
+
+
+        <Button
+            android:id="@+id/btn_lunalogo"
+            android:layout_width="120dip"
+            android:layout_height="70dip"
+            android:layout_marginStart="80dip"
+            android:layout_marginLeft="80dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/lunalogo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#100c3e"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="- 지점 안내 -"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TabHost
+            android:id="@+id/tabHost1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- TabWidget의 id값이 반드시 "tabs"로 지정되어야 함. -->
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!-- FrameLayout의 id값이 반드시 "tabcontent"로 지정되어야 함. -->
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 첫 번째 페이지(서울지점). content1 -->
+                    <LinearLayout
+                        android:id="@+id/content1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!-- 서울 복사 start -->
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="235dp"
+                                android:layout_marginTop="30dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="SEOUL HOTELS"
+                                    android:textColor="#000000"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                                <ViewFlipper
+                                    android:id="@+id/image_seoul"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="300dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10sp"
+                                    android:text="2020년 3월 오픈한 서울지점은 전에 없던 품격 있는 공간으로 재탄생하여"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="럭셔리 호텔의 새로운 지평을 열어갈 것입니다."
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="모던하면서 편안한 분위기를 자아내는 리셉션 데스크 'The Lobby' 와"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="성공적인 비즈니스를 위한 럭셔리 라운지 'Le Salon' 에서 섬세하고"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="-40dp"
+                                    android:text=" 차별화된 Executive Tower 만의 VIP 서비스를 경험할 수 있습니다"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                // 구분선
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="70dip"
+                                    android:background="#D3D3D3" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="50dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:text="THE HEART OF SEOUL"
+                                    android:textColor="#000000"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp">
+
+                                    <TableRow>
+
+                                        <Button
+                                            android:id="@+id/btn_seoulview1"
+                                            android:layout_width="200dp"
+                                            android:layout_height="300dp"
+                                            android:background="@drawable/h_seoul4">
+
+                                        </Button>
+
+                                        <Button
+                                            android:layout_width="200dp"
+                                            android:layout_height="300dp"
+                                            android:background="#FFFFFF"
+                                            android:gravity="center|left"
+                                            android:layout_gravity="center|left"
+                                            android:text=" HOTEL LUNA\n 서울지점 \n\n ·맞춤형 공간 제공 \n ·셰프들이 선보이는 일품요리 \n ·비즈니스 행사를 위한 장소" />
+
+                                    </TableRow>
+
+                                    <TableRow>
+
+                                        <Button
+                                            android:layout_width="200dp"
+                                            android:layout_height="300dp"
+                                            android:background="#FFFFFF"
+                                            android:gravity="center|right"
+                                            android:layout_gravity="center|right"
+                                            android:text=" Nearby tourist spots \n 주변관광지 \n\n ·역사와 문화가 숨쉬는 곳 \n ·쇼핑의 중심지">
+
+                                        </Button>
+
+                                        <Button
+                                            android:id="@+id/btn_seoulview2"
+                                            android:layout_width="200dp"
+                                            android:layout_height="300dp"
+                                            android:background="@drawable/h_seoul5"
+                                            android:padding="10dp" />
+
+                                    </TableRow>
+                                </TableLayout>
+
+                                // 구분선
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="70dip"
+                                    android:background="#D3D3D3" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="50dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:text="LOCATION"
+                                    android:textColor="#000000"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btn_seoulmap"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/map" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="50dp"
+                                    android:text="서울특별시 서초구 반포3동, 호텔루나 서울 / TEL : 010-3826-6515 \n Room Reservation TEL : 010-3826-6515"
+                                    android:textColor="#000000"
+                                    android:textSize="10sp" />
+
+
+                            </LinearLayout>
+
+                        </ScrollView>
+                        <!-- 서울 복사 end -->
+                    </LinearLayout>
+
+                    <!-- 두 번째 페이지. content2 -->
+                    <LinearLayout
+                        android:id="@+id/content2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- 부산 복사 start -->
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="235dp"
+                                android:layout_marginTop="30dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="BUSAN HOTELS"
+                                    android:textColor="#000000"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                                <ViewFlipper
+                                    android:id="@+id/image_busan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="300dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:text="다이나믹한 뷰를 즐길 수 있는 인피니티 풀, 럭셔리 코스메틱 브랜드'샹테카이'의"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="스파, 투숙객 전용 가든 테라스 등 다채로운 부대시설이 시그니엘의 품격과 어우러져"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="품격과 어우러져 그동안 부산에서 볼 수 없었던 새로운 가치를 전합니다."
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="차오란은 화려하게 번영하였던 1920년대 홍콩의 분위기를 반영한"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="-40dp"
+                                    android:text="모던 차이니즈 레스토랑도 가지고 있습니다."
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                // 구분선
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="70dip"
+                                    android:background="#D3D3D3" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="50dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:text="THE HEART OF BUSAN"
+                                    android:textColor="#000000"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp">
+
+                                    <TableRow>
+
+                                        <Button
+                                            android:id="@+id/btn_busanview1"
+                                            android:layout_width="200dp"
+                                            android:layout_height="300dp"
+                                            android:background="@drawable/h_busan4">
+
+                                        </Button>
+
+                                        <Button
+                                            android:layout_width="200dp"
+                                            android:layout_height="300dp"
+                                            android:background="#FFFFFF"
+                                            android:gravity="center|left"
+                                            android:layout_gravity="center|left"
+                                            android:text=" HOTEL LUNA\n 부산지점 \n\n ·세계적인 럭셔리한 객실 \n ·셰프의 신선한 요리 \n ·시그니엘의 섬세한 서비스 약속">
+
+                                        </Button>
+
+                                    </TableRow>
+
+                                    <TableRow>
+
+                                        <Button
+                                            android:layout_width="200dp"
+                                            android:layout_height="300dp"
+                                            android:background="#FFFFFF"
+                                            android:gravity="center|right"
+                                            android:layout_gravity="center|right"
+                                            android:text=" Nearby tourist spots \n 주변관광지 \n\n ·부산 주변의 다양한 관광지 \n ·전문 투어 가이드와 함께!">
+
+                                        </Button>
+
+                                        <Button
+                                            android:id="@+id/btn_busanview2"
+                                            android:layout_width="200dp"
+                                            android:layout_height="300dp"
+                                            android:background="@drawable/h_busan5"
+                                            android:padding="10dp">
+
+                                        </Button>
+
+                                    </TableRow>
+                                </TableLayout>
+
+                                // 구분선
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="70dip"
+                                    android:background="#D3D3D3" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="50dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:text="LOCATION"
+                                    android:textColor="#000000"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btn_busanmap"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/map" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="50dp"
+                                    android:text="부산광역시 해운대구 우1동 628-1, 호텔루나 부산 / TEL :  010-4993-0654 \n Room Reservation TEL :  010-4993-0654"
+                                    android:textColor="#000000"
+                                    android:textSize="10sp" />
+
+
+                            </LinearLayout>
+
+                        </ScrollView>
+                        <!-- 부산 복사 end -->
+
+                    </LinearLayout>
+
+                    <!-- 세 번째 페이지. content3 -->
+                    <LinearLayout
+                        android:id="@+id/content3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- 제주 복사 start -->
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="235dp"
+                                android:layout_marginTop="30dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="JEJU HOTELS"
+                                    android:textColor="#000000"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                                <ViewFlipper
+                                    android:id="@+id/image_jeju"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="300dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:text="환상의 섬 제주도 중문관광단지에 위치한 호텔루나 제주는"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="남아프리카의 리조트 호텔 ‘The Palace of the Lost City’를 모델로 설계되어"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="천혜의 제주 자연과 어우러진 이국적인 분위기를 느낄 수 있습니다."
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="레스토랑 및 라운지 연회장을 구비해 대규모 국제행사와 세미나에 최적일 뿐만"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="아니라 온수풀, 헬로키티 캐릭터 룸, 플레이토피아 등"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="-40dp"
+                                    android:text="다양한 시설을 갖춰 가족과 연인들에게 사랑 받는 호텔입니다."
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                // 구분선
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="70dip"
+                                    android:background="#D3D3D3" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="50dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:text="THE HEART OF JEJU"
+                                    android:textColor="#000000"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp">
+
+                                    <TableRow>
+
+                                        <Button
+                                            android:id="@+id/btn_jejuview1"
+                                            android:layout_width="200dp"
+                                            android:layout_height="300dp"
+                                            android:background="@drawable/h_jeju6">
+
+                                        </Button>
+
+                                        <Button
+                                            android:layout_width="200dp"
+                                            android:layout_height="300dp"
+                                            android:background="#FFFFFF"
+                                            android:gravity="center|left"
+                                            android:layout_gravity="center|left"
+                                            android:text=" HOTEL LUNA\n 제주지점 \n\n ·아름다운 정원과 에메랄드 전망 \n ·야외 리셉션 장소 구비 \n ·첨단시설있는 현대적인 회의실">
+
+                                        </Button>
+
+                                    </TableRow>
+
+                                    <TableRow>
+
+                                        <Button
+                                            android:layout_width="200dp"
+                                            android:layout_height="300dp"
+                                            android:background="#FFFFFF"
+                                            android:gravity="center|right"
+                                            android:layout_gravity="center|right"
+                                            android:text=" Nearby tourist spots \n 주변관광지 \n\n ·푸른 바다와 하늘이 맞닿은 곳 \n ·전문 투어 가이드와 함께!">
+
+                                        </Button>
+
+                                        <Button
+                                            android:id="@+id/btn_jejuview2"
+                                            android:layout_width="200dp"
+                                            android:layout_height="300dp"
+                                            android:background="@drawable/h_jeju7"
+                                            android:padding="10dp">
+
+                                        </Button>
+
+                                    </TableRow>
+                                </TableLayout>
+
+                                // 구분선
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="70dip"
+                                    android:background="#D3D3D3" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="50dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:text="LOCATION"
+                                    android:textColor="#000000"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btn_jejumap"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/map" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="50dp"
+                                    android:text="제주특별자치도 서귀포시 천지동 820, 호텔루나 제주 / TEL : 010-5480-7429 \n Room Reservation TEL : 010-5480-7429"
+                                    android:textColor="#000000"
+                                    android:textSize="10sp" />
+
+
+                            </LinearLayout>
+
+                        </ScrollView>
+                        <!-- 제주 복사 end -->
+
+                    </LinearLayout>
+
+                    <!-- 네 번째 페이지. content4 -->
+                    <LinearLayout
+                        android:id="@+id/content4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- 속초 복사 start -->
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="235dp"
+                                android:layout_marginTop="30dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="SOKCHO HOTELS"
+                                    android:textColor="#000000"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                                <ViewFlipper
+                                    android:id="@+id/image_sokcho"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="300dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:text="푸르른 산과 에메랄드 빛 바다가 만드는 푸른 빛의 향연,"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="호텔루나 속초에서만 누릴 수 있는 자연의 특권입니다."
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="특별한 경험을 선사하는 리조트로 3면이 바다로 둘러싸인 천혜의 위치해"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="모든 객실에서 푸른 바다를 보실수 있습니다."
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="-40dp"
+                                    android:text="또한, 바다 저편으로 헤엄쳐가는 듯한 특별한 경험을 선사합니다."
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+
+                                // 구분선
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="70dip"
+                                    android:background="#D3D3D3" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="50dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:text="THE HEART OF SOKCHO"
+                                    android:textColor="#000000"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp">
+
+                                    <TableRow>
+
+                                        <Button
+                                            android:id="@+id/btn_sokchoview1"
+                                            android:layout_width="200dp"
+                                            android:layout_height="300dp"
+                                            android:background="@drawable/h_sokcho5">
+
+                                        </Button>
+
+                                        <Button
+                                            android:layout_width="200dp"
+                                            android:layout_height="300dp"
+                                            android:background="#FFFFFF"
+                                            android:gravity="center|left"
+                                            android:layout_gravity="center|left"
+                                            android:text=" HOTEL LUNA\n 속초지점 \n\n ·동해가 앞에 있는 워터파크 \n ·맛있는 자연의 경험 \n ·음악과 편안한 만남이 있는 곳">
+
+                                        </Button>
+
+                                    </TableRow>
+
+                                    <TableRow>
+
+                                        <Button
+                                            android:layout_width="200dp"
+                                            android:layout_height="300dp"
+                                            android:background="#FFFFFF"
+                                            android:gravity="center|right"
+                                            android:layout_gravity="center|right"
+                                            android:text=" Nearby tourist spots \n 주변관광지 \n\n ·동해와 설악산이 위치 \n ·바다전망을 감상~">
+
+                                        </Button>
+
+                                        <Button
+                                            android:id="@+id/btn_sokchoview2"
+                                            android:layout_width="200dp"
+                                            android:layout_height="300dp"
+                                            android:background="@drawable/h_sokcho6"
+                                            android:padding="10dp">
+
+                                        </Button>
+
+                                    </TableRow>
+                                </TableLayout>
+
+                                // 구분선
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="70dip"
+                                    android:background="#D3D3D3" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="50dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:text="LOCATION"
+                                    android:textColor="#000000"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/btn_sokchomap"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/map" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="50dp"
+                                    android:text="강원도 속초시 조양동 1391-12, 호텔루나 속초 / TEL : 010-4122-9142 \n Room Reservation TEL : 010-4122-9142"
+                                    android:textColor="#000000"
+                                    android:textSize="10sp" />
+
+
+                            </LinearLayout>
+
+                        </ScrollView>
+                        <!-- 제주 복사 end -->
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </RelativeLayout>
+
+
+</LinearLayout>

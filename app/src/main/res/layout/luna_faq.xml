@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#100c3e">
+
+        <!-- 상단바 버튼 값의 설정 -->
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/btn_back"
+            android:id="@+id/btn_back">
+        </Button>
+
+        <Button
+            android:layout_width="120dip"
+            android:layout_height="70dip"
+            android:layout_marginLeft="80dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/lunalogo"
+            android:id="@+id/btn_lunalogo"> //로고버튼 아이디지정
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#100c3e">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="- F A Q -"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+//텝호스트설정
+        <TabHost
+            android:id="@+id/tabHost1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    //FAQ 내용 시작
+                    <LinearLayout
+                        android:id="@+id/content1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        //스크롤뷰
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="30dp"
+                                android:orientation="vertical">
+                                //리스트뷰 내용추가 1~15까지내용
+                                <ExpandableListView
+                                    android:id="@+id/exapandable_listview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1200dp">
+                                </ExpandableListView>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="30dp"
+                                    android:orientation="vertical">
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                        </ScrollView>
+
+                    </LinearLayout>
+                    //FAQ1끝
+
+                    //연락처 시작
+                    <LinearLayout
+                        android:id="@+id/content2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        //스크롤뷰시작
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="235dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="호텔 문의는 대표전화를 이용하면 빠르게 답변을 받을 수 있습니다." />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:background="#100c3e"
+                                    android:text="LUNA REWARDS"
+                                    android:textSize="15sp"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_height="20dp"
+                                    android:textSize="15sp"
+                                    android:text=" 대표전화                                                010-3826-6515"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:background="#100c3e"
+                                    android:text="THE LUNA"
+                                    android:textSize="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"/>
+                                //서울루나호텔
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_height="20dp"
+                                    android:textSize="15sp"
+                                    android:text=" 호텔루나 서울"
+                                    android:textStyle="bold"/>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dip"
+                                    android:background="#D3D3D3" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_height="60dp"
+                                    android:textSize="15sp"
+                                    android:text=" 대표전화                                                010-3826-6515\n 객실예약                                                010-3826-6515\n * 평일(월~금요일) 09:00~18:00, 주말 및 공휴일 09:00~16:00"
+                                    android:textStyle="bold"/>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dip"
+                                    android:background="#D3D3D3" />
+                                //부산루나호텔
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_height="20dp"
+                                    android:textSize="15sp"
+                                    android:text=" 호텔루나 부산"
+                                    android:textStyle="bold"/>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dip"
+                                    android:background="#D3D3D3" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_height="60dp"
+                                    android:textSize="15sp"
+                                    android:text=" 대표전화                                                010-4933-0654\n 객실예약                                                010-4933-0654\n * 평일(월~금요일) 09:00~18:00, 주말 및 공휴일 10:00~16:00"
+                                    android:textStyle="bold"/>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dip"
+                                    android:background="#D3D3D3" />
+                                //제주루나호텔
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_height="20dp"
+                                    android:textSize="15sp"
+                                    android:text=" 호텔루나 제주"
+                                    android:textStyle="bold"/>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dip"
+                                    android:background="#D3D3D3" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_height="60dp"
+                                    android:textSize="15sp"
+                                    android:text=" 대표전화                                                010-5480-7429\n 객실예약                                                010-5480-7429\n * 평일(월~금요일) 09:00~18:00, 주말 및 공휴일 9:00~16:00"
+                                    android:textStyle="bold"/>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dip"
+                                    android:background="#D3D3D3" />
+                                //속초루나호텔
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_height="20dp"
+                                    android:textSize="15sp"
+                                    android:text=" 호텔루나 속초"
+                                    android:textStyle="bold"/>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="10dip"
+                                    android:background="#D3D3D3" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginBottom="30dp"
+                                    android:textSize="15sp"
+                                    android:text=" 대표전화                                                010-4122-9142\n 객실예약                                                010-4122-9142\n * 평일(월~금요일) 09:00~18:00, 주말 및 공휴일 10:00~16:00"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                        </ScrollView>
+                    </LinearLayout>
+                    //컨텐트2끝
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </RelativeLayout>
+</LinearLayout>

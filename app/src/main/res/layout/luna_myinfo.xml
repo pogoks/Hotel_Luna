@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#100c3e">
+
+        <!-- 상단바 버튼 값의 설정 -->
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/btn_back"
+            android:id="@+id/btn_back">
+        </Button>
+
+
+        <Button
+            android:layout_width="120dip"
+            android:layout_height="70dip"
+            android:layout_marginLeft="80dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/lunalogo"
+            android:id="@+id/btn_lunalogo"
+            android:layout_marginStart="80dip">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#100c3e">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="- 내 정보 -"/>
+
+    </LinearLayout>
+
+    // 회원 정보가 출력되는 곳
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#100c3e">
+
+
+        <ImageView
+            android:id="@+id/image_gender"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/man"/>
+
+        <TextView
+            android:id="@+id/text_uesr_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="심희준 님"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/text_uesr_id"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="shj1996"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/text_uesr_email"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="shimmyungsic@naver.com"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/text_uesr_phone"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="010-3826-6515"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+    // 여기까지 회원 정보 출력하는곳
+
+    // 예약확인 수정 칸
+    <LinearLayout
+        android:id="@+id/lay_reser_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/check"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="10dp" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예약정보 확인"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:layout_marginStart="15dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="호텔예약 내역을 확인하세요."
+                android:textSize="15sp"
+                android:textColor="#646464"
+                android:layout_marginStart="15dp" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    // 여기까지
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#D3D3D3" />
+
+    // 회원정보 수정 칸
+    <LinearLayout
+        android:id="@+id/lay_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/edit_profile"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="10dp" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회원정보 수정"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:layout_marginStart="15dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="휴대전화 등 내 정보를 변경하세요."
+                android:textSize="15sp"
+                android:textColor="#646464"
+                android:layout_marginStart="15dp" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    // 여기까지
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#D3D3D3" />
+
+    // 비밀번호 변경 칸
+    <LinearLayout
+        android:id="@+id/lay_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/change_password"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="10dp" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 변경"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:layout_marginStart="15dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 변경으로 정보를 보호하세요."
+                android:textSize="15sp"
+                android:textColor="#646464"
+                android:layout_marginStart="15dp" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    // 여기까지
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#D3D3D3" />
+
+    // 회원탈퇴 칸
+    <LinearLayout
+        android:id="@+id/lay_remove_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/member_remove"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="10dp" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회원탈퇴"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:layout_marginStart="15dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="#646464"
+                android:layout_marginStart="15dp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    // 여기까지
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#D3D3D3" />
+
+</LinearLayout>

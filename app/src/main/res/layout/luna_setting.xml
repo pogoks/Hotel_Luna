@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f7f7"
+    >
+
+
+    // 상단바 3개 아이콘 들어가는 레이아웃
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#100c3e">
+
+        <!-- 상단바 버튼 값의 설정 -->
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/btn_back"
+            android:id="@+id/btn_back"> //메뉴버튼 아이디지정
+        </Button>
+
+        <Button
+            android:layout_width="120dip"
+            android:layout_height="70dip"
+            android:layout_marginLeft="80dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/lunalogo"
+            android:id= "@+id/btn_lunalogo"> //로고버튼 아이디지정
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#100c3e">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="- 환경 설정 -"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="로그인"
+        android:layout_marginLeft="20dip"
+        android:textColor="#100c3e"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginTop="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자동로그인 활성화"
+            android:layout_marginLeft="20dip"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:id="@+id/switch_autologin"
+            android:thumbTint="#100c3e"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="70dip"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#D3D3D3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="알림"
+        android:layout_marginLeft="20dip"
+        android:textColor="#100c3e"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    // 알림 : 광고수신 부분 레이아웃
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginTop="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS 광고수신"
+            android:layout_marginLeft="20dip"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="219dp"
+            android:id="@+id/switch_SMS_adver"
+            android:thumbTint="#100c3e"
+            />
+
+    </LinearLayout>
+// 알림 : 예약수신
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginTop="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS 예약정보수신"
+            android:layout_marginLeft="20dip"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="189dp"
+            android:id="@+id/switch_SMS_reser"
+            android:thumbTint="#100c3e"
+            />
+
+    </LinearLayout>
+// 구분선
+    <View
+        android:layout_marginTop="70dip"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#D3D3D3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기타"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="20dip"
+        android:textColor="#100c3e"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    // 기다 : 권한설정
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="권한 설정"
+            android:layout_marginLeft="20dip"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        // 권한 설정 버튼인데 영어로 넣으면 오류나서 한글로쳤어요
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ff0000"
+            android:textColor="#100c3e"
+           android:text=">"
+            android:textSize="30sp"
+            android:layout_marginLeft="250dp"
+            android:thumbTint="#540dcb"
+            android:id="@+id/btn_rnjsgks"
+            />
+
+    </LinearLayout>
+// 기타 : 케시삭제
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="캐시 삭제"
+            android:layout_marginLeft="20dip"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        // 권한 설정 버튼인데 영어로 넣으면 오류나서 한글로쳤어요
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_noneborder"
+            android:textColor="#100c3e"
+            android:text="삭제"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btn_cash_remove"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버전 정보"
+            android:layout_marginLeft="20dip"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp" />
+
+        // 권한 설정 버튼인데 영어로 넣으면 오류나서 한글로쳤어요
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#100c3e"
+            android:layout_marginTop="10dp"
+            android:text="버전 V 1.0.0"
+            android:textSize="17sp"
+            android:layout_marginLeft="225dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_gravity="bottom">
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/bottom_button"
+           android:layout_gravity="bottom"
+           android:text="적용"
+           android:textColor="#ffffff"
+           android:textSize="25sp"
+           android:textStyle="bold"
+           android:id="@+id/btn_apply"
+           />
+
+   </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string-array name="hotel_name">
+    <item>▼ 예약하실 호텔을 선택해 주세요 </item>
+    <item>▼ 호텔 루나 - 서울</item>
+    <item>▼ 호텔 루나 - 부산</item>
+    <item>▼ 호텔 루나 - 제주</item>
+    <item>▼ 호텔 루나 - 속초</item>
+</string-array>
+
+    <string-array name="card_name">
+        <item>▼ KB 국민 </item>
+        <item>▼ 신한카드 </item>
+        <item>▼ 하나카드 </item>
+        <item>▼ NH채움 </item>
+        <item>▼ 비씨카드 </item>
+        <item>▼ 우채국카드</item>
+        <item>▼ BC카드 </item>
+    </string-array>
+
+    <string-array name="pay_name">
+        <item>▼ 무통장 입금 </item>
+        <item>▼ 삼성페이 ( 10% 할인 ) </item>
+        <item>▼ 카카오페이 </item>
+        <item>▼ 신용카드 </item>
+    </string-array>
+
+    <string-array name="email_name">
+        <item> --------- </item>
+        <item> naver.com </item>
+        <item> gmail.com </item>
+        <item> daum.net </item>
+        <item> nate.com </item>
+    </string-array>
+
+    <string-array name="phone_name">
+        <item> --- </item>
+        <item> 010 </item>
+        <item> 011 </item>
+        <item> 016 </item>
+        <item> 017 </item>
+    </string-array>
+
+    <string-array name="gender_name">
+        <item> - </item>
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+    </string-array>
+
+</resources>

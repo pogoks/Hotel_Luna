@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    // 상단바 3개 아이콘 들어가는 레이아웃
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#100c3e">
+
+        <!-- 상단바 버튼 값의 설정 -->
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/btn_back"
+            android:id="@+id/btn_back">
+        </Button>
+
+        <Button
+            android:layout_width="120dip"
+            android:layout_height="70dip"
+            android:layout_marginLeft="80dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/lunalogo"
+            android:id="@+id/btn_lunalogo"> //로고버튼 아이디지정
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#100c3e">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="- 약관 동의 -"/>
+
+    </LinearLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#D3D3D3" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        //회원가입 절차 레이아웃
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="330dip"
+                android:layout_height="350dip"
+                android:background="@drawable/newaccount_bg">
+                //스크롤뷰 시작
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_width="120dip"
+                    android:layout_height="20dip"
+                    android:text="제1조(목적)"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_width="310dip"
+                    android:layout_height="wrap_content"
+                    android:text="본 약관은 호텔루나가 운영하는 모바일 애플리케이션에서 제공하는 서비스를 이용함에 있어 호텔루나와 이용
+자의 권리, 의무 및 책임 사항을 규정함을 목적으로 합니다."
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_width="120dip"
+                    android:layout_height="wrap_content"
+                    android:text="제2조(정의)"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_width="310dip"
+                    android:layout_height="wrap_content"
+                    android:text="1. 이용자란 호텔루나에 접속하여 본약관에  제공하는 서비스를 받는 회원을 말합니다.
+    \n2. 회원 이라 함은 호텔루나에 개인정보를 제공하여 회원등록을 한 자로서, 호텔루나의 정보를 지속적으로
+제공받으며, 호텔루나가 제공하는 서비스를 계속적으로 이용 할 수 있는 자를 말합니다."
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:text="제3조(서비스 중지)"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_width="310dip"
+                    android:layout_height="wrap_content"
+                    android:text="(1) 호텔루나는 다음 각 호 중 어느 하나에 해당하는 사유가 발생하는 경우에는 이용자의 서비스 이용을 제한
+하거나 중지할 수 있습니다."
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    />
+                    <TextView
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_width="310dip"
+                        android:layout_height="wrap_content"
+                        android:text="1. 컴퓨터 등 정보통신설비의 보수점검 교체 및고장
+                                                                                              2. 국가비상사태, 서비스 설비의 장애 또는 서비스 이용의 폭주 등으로 서비스 이용에 지장이 있는 경우
+        \n3. 기타 중대한 사유로 인하여 회사가 서비스 제공을 지속하는 것이 부적당하다고 인정하는 경우
+"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_width="150dip"
+                        android:layout_height="wrap_content"
+                        android:text="제4조(서비스 중지)"
+                        android:textSize="17sp"
+                        android:textColor="#000000"
+                        />
+                    <TextView
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_width="310dip"
+                        android:layout_height="wrap_content"
+                        android:text="1. 이용자는 호텔루나가 정한 가입 양식에 따라 회원정보를 기입한 후 본 약관에 동의한다는 의사표시를
+함으로서 회원가입을 신청합니다.                                                2. 호텔루나는 제 1항과 같은 회원가입 신청에 대하여 승낙함으로써 회원가입계약이 성립하며, 다음 각
+호 중 어느 하나에 해당하는 이용자의 회원가입 신청에 대해서는 이를 거부할 수 있습니다."
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        />
+                </LinearLayout>
+                </ScrollView>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="약관에 동의합니다."
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dip" />
+         <RadioButton
+             android:layout_weight="1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dip"
+             android:layout_marginLeft="44dp"
+             android:buttonTint="#100c3e"
+             android:id="@+id/Rbtn_agree"/> //동의합니다 라디오버튼 아이디
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="약관에 동의하지않습니다."
+                android:textStyle="bold"
+                android:layout_marginLeft="40dip"/>
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#100c3e"
+                android:id="@+id/Rbtn_nagree"/> //동의하지않습니다 라디오버튼 아이디
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_button"
+        android:layout_gravity="bottom"
+        android:text="다음으로"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:id="@+id/btn_join" />
+
+    </LinearLayout>
+</LinearLayout>

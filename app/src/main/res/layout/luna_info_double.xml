@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f7f7f7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#100c3e">
+
+        <!-- 상단바 버튼 값의 설정 -->
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/btn_back"
+            android:id="@+id/btn_back">
+        </Button>
+
+        <Button
+            android:layout_width="120dip"
+            android:layout_height="70dip"
+            android:layout_marginLeft="80dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/lunalogo"
+            android:id="@+id/btn_lunalogo"> //로고버튼 아이디지정
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#100c3e">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="- Double Room -"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dip"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="모던한 아름다움과 호텔 루나 수준의"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="고급 어메네티로 한 단계 업그레이드 된"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="휴식을 경험하십시오."/>
+
+            <FrameLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f7f7f7">
+
+                <TextView
+                    android:id="@+id/text_info"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="#f7f7f7"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:text= "Info"
+                    android:gravity="center_horizontal"
+                    android:layout_marginStart="150dp" />
+
+                // 네모칸 텍스트 넣는곳입니다
+                <FrameLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/room_bg"
+                    android:layout_marginStart="55dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="위치 : 3 ~ 12층 "
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="크기 : 30 평"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="침대 : 더블1"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="조식, 석식, 루프탑 서비스 이용가능 "
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/image_room_01"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="230dip"
+                android:src="@drawable/doubleroom"/>
+
+            <ImageView
+                android:id="@+id/image_room_02"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="230dip"
+                android:src="@drawable/doubleroom2"/>
+
+            <ImageView
+                android:id="@+id/image_room_03"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="230dip"
+                android:src="@drawable/doubleroom3"/>
+
+
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="230dip"
+                android:src="@drawable/health"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="호텔 루나의 헬스장 이용가능 "
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#000000"/>
+
+            <ImageView
+                android:id="@+id/image_nightview"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="230dip"
+                android:src="@drawable/nightview"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="최고의 야경을 볼 수 있는 루프탑 이용가능 "
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#000000"/>
+
+
+            <ImageView
+                android:id="@+id/image_spa"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="230dip"
+                android:src="@drawable/spa"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="최고급 스파 시설 이용가능"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#000000"/>
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="230dip"
+                android:src="@drawable/blackfrist"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="신선한 재료로 만드는 조식 제공 "
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#000000"/>
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="230dip"
+                android:src="@drawable/dinner"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="최고의 하루를 위한 디너 제공 "
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#000000"/>
+
+            //빈공간
+            <LinearLayout
+                android:layout_marginTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

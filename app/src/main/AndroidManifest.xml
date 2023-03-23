@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cookandroid.luna_hotel"
+    >
+    <uses-feature android:required="true" android:glEsVersion="0x00020000"/>
+    <permission android:name="com.cookandroid.cookmap.permission.MAPS_RECEIVE"
+        android:label="signature">
+    </permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <meta-data android:name ="com.google.android.gms.version"
+        android:value = "@inteher/google_play_services_version" />
+
+
+
+    <application
+        android:name=".Login_gloval"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/luna_icon"
+        android:label="호텔 루나"
+        android:screenOrientation="portrait"
+        android:roundIcon="@mipmap/luna_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:resizeableActivity="false">
+
+        <meta-data android:name="android.max_aspect" android:value="2.1" />
+        <activity android:name=".Luna_Myinfo">
+        </activity>
+        <activity android:name=".Luna_Copy4">
+        </activity>
+        <activity android:name=".Luna_Copy3">
+        </activity>
+        <activity android:name=".Luna_Copy2">
+        </activity>
+        <activity android:name=".Luna_Copy1">
+        </activity>
+        <activity android:name=".Luna_FAQ">
+        </activity>
+        <activity android:name=".Luna_Clause">
+        </activity>
+        <activity android:name=".Luna_News">
+        </activity>
+        <activity android:name=".Luna_News_Create">
+        </activity>
+        <activity android:name=".Luna_Promotion">
+        </activity>
+        <activity android:name=".Luna_Local_Hotel_Info">
+        </activity>
+        <activity android:name=".Luna_Establishment_Info">
+        </activity>
+        <activity android:name=".Luna_Change_Password">
+        </activity>
+        <activity android:name=".Luna_Edit_Profile">
+        </activity>
+        <activity android:name=".Luna_Info_Double">
+        </activity>
+        <activity android:name=".Luna_Info_Luxury">
+        </activity>
+        <activity android:name=".Luna_Info_Single">
+        </activity>
+        <activity android:name=".Luna_Info_Family">
+        </activity>
+        <activity android:name=".Luna_Reservation_Room">
+        </activity>
+        <activity android:name=".Luna_Reservation_pay">
+        </activity>
+        <activity android:name=".Luna_Reservation_Check">
+        </activity>
+        <activity android:name=".Luna_Member_Remove">
+        </activity>
+        <activity android:name=".Luna_Reservation_Check_Nothing">
+        </activity>
+        <activity android:name=".Luna_Account_Search">
+        </activity>
+        <activity android:name=".Luna_NewAccount2">
+        </activity>
+        <activity android:name=".Luna_NewAccount">
+        </activity>
+        <activity android:name=".Luna_Login">
+        </activity>
+        <activity android:name=".Luna_menu">
+        </activity>
+        <activity android:name=".Luna_Setting">
+        </activity>
+        <activity android:name=".Luna_Info_Hotel">
+        </activity>
+        <activity android:name=".Luna_Map_Sokcho">
+        </activity>
+        <activity android:name=".Luna_Map_Busan">
+        </activity>
+        <activity android:name=".Luna_Map_Jeju">
+        </activity>
+        <activity android:name=".Luna_Map_Seoul">
+        </activity>
+        <activity android:name=".Luna_Main">
+        </activity>
+        <activity android:name=".Luna_Info_Room">
+        </activity>
+        <activity android:name=".Luna_Intro">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD55U8p9KxRJr8lkTBXGKL1jzrO9Y7BBzk" />
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+    </application>
+
+</manifest>

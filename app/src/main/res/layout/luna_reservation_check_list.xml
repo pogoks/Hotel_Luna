@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:background="#f3f3f3">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="75"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="10">
+
+
+            // 원래 컬러값 #33aabb 입니다
+        <TextView
+            android:id="@+id/list_code2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="예약번호"
+            android:layout_weight="60"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:textColor="#100c3e" />
+
+        <TextView
+            android:id="@+id/list_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="N"
+            android:layout_weight="60"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:textColor="#100c3e" />
+
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/list_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="예약자명"
+            android:layout_weight="40"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/list_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="호텔이름"
+            android:layout_weight="40"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/list_room"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="룸이름"
+            android:layout_weight="40"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/list_reservedate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="예약 날짜"
+            android:layout_weight="40"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/list_price"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="가격"
+            android:layout_weight="40"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    // 버튼 마진 원래 탑 20 바텀 20 이였음
+    <Button
+        android:id="@+id/list_cancel"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="70dp"
+        android:text="예약 취소"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#100c3e"
+        android:background="@drawable/btn_noneborder"
+        android:layout_weight="20" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>
+
